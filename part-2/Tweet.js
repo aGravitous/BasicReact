@@ -1,9 +1,13 @@
 class Tweet extends React.Component {
     render() {
         const { userName, name, date, msg } = this.props;
+        const colors = {
+            color: this.props.textColor,
+            backgroundColor: this.props.bkgColor
+        };
 
         return (
-        <div className="Tweet">
+        <div style={colors}>
             <ul>
                 <p>Username:{ userName } Name: { name}</p>
                 <p>On: { date }</p>
