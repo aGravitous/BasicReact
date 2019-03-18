@@ -1,4 +1,9 @@
 class Tweet extends React.Component {
+    static defaultProps = {
+        textColor: "pink",
+        bkgColor: "purple"
+    };
+
     render() {
         const { userName, name, date, msg } = this.props;
         const colors = {
